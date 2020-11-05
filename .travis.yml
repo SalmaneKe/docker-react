@@ -5,7 +5,7 @@ services:
   - docker 
 
 before_install:
-  - dokcer build -t salmane/docker-react -f Dockerfile.dev .
+  - dokcer build -t SalmaneKe/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true salmane/docker-react npm run test
+  - docker run -e CI=true SalmaneKe/docker-react npm run test
